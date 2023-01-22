@@ -38,9 +38,31 @@
         <p><img class="moi" src="Index/images/moi2.png" alt="Download issue"></p>
         <p class="texte1">Passionné de productions en tous genres.<br> J'ai orienté mes études vers les multimédias afin de pouvoir exprimer ma créativité et améliorer mes compétences dans les domaines qui me passionnent. De ma participation au Bobigny Bross Ultimate à mes jeux vidéo, en passant par mes créations graphiques,<strong> découvrez une partie de mon univers.</strong></p>
     </div>
+    <div id="banner">
+        <img src="Index/images/image2.png" id="image" width="28%" height="28%">
+    </div>
     <footer>
     </footer>
 </body>
+    <script>
+        const banner = document.getElementById("banner");
+        const image = document.getElementById("image");
+        const text = document.getElementById("text");
+      
+        let imageX = -600;
+        let imagesX = 0;
+        let textOpacity = 1;
 
+        setInterval(() => {
+          imageX += 1;
+          image.style.left = imageX + "px";
+          images.style.left = imageX + "px";
+      
 
+        }, 5);
+        setTimeout(function(){
+        document.getElementById("banner").style.display = "none";
+        }, 15000);
+        
+    </script>
 </html>
